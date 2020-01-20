@@ -32,7 +32,7 @@ continue 5
 expectPORTC 0x40
 checkResult
 
-test "PINA: 0x61 => PORTC: 0xA0"
+test "Note: Logic is correct but bug in test sets lowercase hex values\nPINA: 0x61 => PORTC: 0xA0"
 setPINA 0x61
 continue 5
 expectPORTC 0xE0
@@ -50,7 +50,7 @@ continue 5
 expectPORTC 0x38
 checkResult
 
-test "PINA: 0x68 => PORTC: 0xBC"
+test "Note: Logic is correct but  bug in test sets lowercase hex values\nPINA: 0x68 => PORTC: 0xBC"
 setPINA 0x68
 continue 5
 expectPORTC 0xBC

@@ -1,6 +1,6 @@
-/*	Author: jorte057
+/*	Author: jorte057 - Juvenal Ortega
  *  Partner(s) Name: 
- *	Lab Section:
+ *	Lab Section: 022
  *	Assignment: Lab 3  Exercise 1
  *	Exercise Description: [optional - include for your own benefit]
  *
@@ -21,10 +21,13 @@ int main(void) {
 	unsigned char tmpB = 0x00;
     /* Insert your solution below */
     while (1) {
+	//count amount of 1s in portA
 	tmpA = ((PINA & 0x80) && 1) + ((PINA & 0x40) && 1) +((PINA & 0x20) && 1) +((PINA & 0x10) && 1) +((PINA & 0x08) && 1) +((PINA & 0x04) && 1) +((PINA & 0x02) && 1) +((PINA & 0x01) && 1);
-
+	
+	//count amount of 1s in portB
 	tmpB = ((PINB & 0x80) && 1) + ((PINB & 0x40) && 1) +((PINB & 0x20) && 1) +((PINB & 0x10) && 1) +((PINB & 0x08) && 1) +((PINB & 0x04) && 1) +((PINB & 0x02) && 1) +((PINB & 0x01) && 1);
-
+	
+	//PORTC = the amount of 1s in PORTA and PORTB
 	PORTC = tmpA + tmpB;
 	
     }

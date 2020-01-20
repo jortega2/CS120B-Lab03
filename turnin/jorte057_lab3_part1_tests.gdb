@@ -26,7 +26,7 @@
 echo ======================================================\n
 echo Running all tests..."\n\n
 
-test "PINA: 0xFF PINC: 0xFF  => PORTC: 16"
+test "PINA: 0xFF PINC: 0xFF  => PORTC: 10"
 setPINA 0xFF
 setPINB 0xFF
 continue 5
